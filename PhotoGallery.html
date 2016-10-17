@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="photoApp">
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="jqueryscript.js"></script>
+<link href="styles.css" rel="stylesheet">
+
+
+</head>
+<body ng-controller="MainCtrl as ctrl">
+<!--div id="current_image">
+	<img ng-src="{{currentImage}}" />
+</div-->
+<img src='imgs/Germany/IMG_2553.JPG'>
+<div id="thumbWrapper">
+ 	<ul id="thumbList">
+ 		<li ng-repeat="image in ctrl.images">
+ 			<img ng-src="{{image.src}}" />
+ 		</li>
+ 	</ul>
+</div>
+
+
+</body>
+</html>
